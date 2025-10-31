@@ -1,5 +1,5 @@
-# ML-projects
-Various ML projects
+# Machine Learning Projects
+Various ML projects I am working on
 
 ---
 
