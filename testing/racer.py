@@ -10,7 +10,7 @@ pygame.display.set_caption("Car Track with Lidar Sensors")
 clock = pygame.time.Clock()
 
 # --- Load assets ---
-track = pygame.image.load("track.png").convert()
+track = pygame.image.load("track2.png").convert()
 track = pygame.transform.scale(track, (WIDTH, HEIGHT))
 
 car_image = pygame.image.load("car.png").convert_alpha()
@@ -68,7 +68,7 @@ def get_lidar_readings(x, y, angle, track_surface):
     for a in lidar_angles:
         point, dist = cast_lidar(x, y, angle + a, track_surface)
         readings.append(dist)
-        pygame.draw.line(screen, (255, 255, 0), (x, y), point, 2)
+        pygame.draw.line(screen, (0, 0, 250), (x, y), point, 2)
         pygame.draw.circle(screen, (255, 0, 0), point, 3)
     return readings
 
